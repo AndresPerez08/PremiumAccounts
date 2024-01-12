@@ -83,67 +83,96 @@ header label:hover {
     margin-right: 0%;
 }
 /* SECCION DE STREAMING  */
+.container-body__streaming-card{
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin: auto;
+}
+
+.nav{
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
 .main-streaming{
     background-color: white;
     width: 100%;
     color: black;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
   }
   
   .seccion-tarjetas{
     background-color: #EAEAEA;
+    width: 90%;
     margin: 30px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    place-items: center;
   }
   
-  .section-orden__caja{
-    display: flex;
-    justify-content: center;
-  }
   
-  .main-streaming__titulo h1{
-    text-align: center;
-    padding-top: 30px;
-  }
-  
-  .main-streaming__encabezado h4{
-    text-align: center;
-  }
-  
-  .streaming-tarjetas{
-    width: 250px;
-    background-color: #EAEAEA;
-    margin: 30px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-  }
-  
-  .streaming-tarjetas__caja{
+.main-streaming__imagen{
+   display: block;
+  width: 100%;
+}
+.main-streaming__imagen img{
     width: 100%;
-  }
+    height: 300px;
+}
+.streaming-tarjetas{
+  width: 250px;
+  background-color: #EAEAEA;
+  margin: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.streaming-tarjetas__caja{
+  width: 100%;
+}
+
+.streaming-tarjetas__caja a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  height: 100%;
+}
+
+.imagen-streaming{
+  border-radius: 20px;
+}
+
   
-  .streaming-tarjetas__caja a{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    height: 100%;
-  }
-  
-  .imagen-streaming{
-    border-radius: 20px;
-  }
-  
+
   /* FORMULARIOS */
   
+.body-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+}
+
+
   .main-form{
     background-color: white;
     color: white;
-    width: 100%;
+    max-width: 1440px;
     height: 100vh;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+      justify-content: center;
+    align-self: center;
   }
   
   .main-form h1{
@@ -180,7 +209,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-netflix.jpg");
+    , url("Imagenes-tarjeta/portada-netflix.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,7 +266,7 @@ header label:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
       )
-      , url("Imagenes/portada-hbomax.png");
+      , url("Imagenes-tarjeta/portada-hbomax.png");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -302,7 +331,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-disney.png");
+    , url("Imagenes-tarjeta/portada-disney.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -366,7 +395,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-plextv.png");
+    , url("Imagenes-tarjeta/portada-plextv.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -428,7 +457,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-paramount.jpg");
+    , url("Imagenes-tarjeta/portada-paramount.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -490,7 +519,7 @@ header label:hover {
     rgb(0, 0, 0),
     rgb(0, 0, 0)
     )
-    , url("Imagenes/portada-appletv.png");
+    , url("Imagenes-tarjeta/portada-appletv.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -552,7 +581,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-crunchyroll.png");
+    , url("Imagenes-tarjeta/portada-crunchyroll.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -613,7 +642,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-starplus.png");
+    , url("Imagenes-tarjeta/portada-starplus.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -675,7 +704,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-youtube.jpg");
+    , url("Imagenes-tarjeta/portada-youtube.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -735,7 +764,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-hbomax.png");
+    , url("Imagenes-tarjeta/portada-hbomax.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -796,7 +825,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-hbomax.png");
+    , url("Imagenes-tarjeta/portada-pornhub.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -859,7 +888,7 @@ header label:hover {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     )
-    , url("Imagenes/portada-iptv.jpg");
+    , url("Imagenes-tarjeta/portada-iptv.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -960,8 +989,349 @@ h5{
     font-size: 15px;
 }
 /*footerfinal*/
+
+
+
+/*Responsivo para tablets*/
+@media screen and (max-width: 930px){
+  .container-body__streaming-card{
+    width: 100%;
+    
+  }
+
+  .main-streaming{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .nav{
+    width: 100%;
+    align-self: center;
+  }
+
+  .seccion-tarjetas{
+    background-color: #EAEAEA;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(2, 1fr); 
+    place-items: center;
+    align-self: flex-start;
+  }
+
+    
+
+  .contenedor-tarjeta{
+    width: 100%;
+    height: 100vh;
+    margin: 10px;
+    padding: 0px;
+  }
+
+  .correccion-netflix{
+    width: 90%;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px ;
+  }
+
+  .video1 {
+    width: 350px;
+    height: 200px;
+    border: 3px solid #fff;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+    margin-right: auto;
+    margin: 25px 0;
+}
+
+.text-center{
+  background: none;
+}
+  
+}
+
+
+
 /*Responsivo para movil*/
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 630px) {
+  /* SECCION DE STREAMING RESPONSIVO */
+ .container-body__streaming-card{
+    width: 100%;
+   
+  }
+
+.main-streaming{
+    background-color: white;
+    width: 100%;
+    color: black;  
+  }
+  
+  .seccion-tarjetas{
+    background-color: #EAEAEA;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(1, 1fr); 
+    place-items: center;
+  }
+  
+  .section-orden__caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  
+  .streaming-tarjetas{
+    width: 250px;
+    background-color: #EAEAEA;
+    margin: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  
+  .streaming-tarjetas__caja{
+    width: 100%;
+  }
+  
+  .streaming-tarjetas__caja a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .imagen-streaming{
+    border-radius: 20px;
+  }
+  
+  /* FORMULARIOS RESPONSIVOS */
+  
+  
+
+  .main-form{
+    width: 100%;
+  }
+  
+  .contenedor-tarjeta{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+  }
+  .text-center{
+    background: none;
+  }
+  
+    /* NETFLIX */
+.formulario-tarjeta__Netflix{
+  width: 100%;
+  border-radius: 10px;
+  border: 8px solid red;
+}
+  
+  .correccion-netflix{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+    /* HBO */
+  
+.formulario-tarjeta__HBOMAX{
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid #3D3B40;
+}
+  
+  .correccion-hbo{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  /* DISNEY PLUS*/
+.formulario-tarjeta__DISNEYPLUS{
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid darkblue;
+}
+  
+  .correccion-disney{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  /* PLEX TV*/
+
+.formulario-tarjeta__PLEXTV{
+
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid #F79327;
+}
+  
+  .correccion-plextv{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+/* APPLE TV*/
+
+.formulario-tarjeta__APPLETV{
+
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid gray;
+}
+  
+  .correccion-appletv{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }  
+  
+/* Crunchyroll*/
+
+.formulario-tarjeta__CRUNCHYROLL{
+
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid orange;
+}
+  
+  .correccion-crunchyroll{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }    
+  
+  /* Spotify*/
+
+.formulario-tarjeta__SPOTIFY{
+
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid green;
+}
+  
+  .correccion-spotify{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }    
+  
+  /* Youtube premium*/
+  
+  .formulario-tarjeta__YOUTUBE {
+  
+    width: 100%;
+    border-radius: 10px;
+      border: 8px solid red;
+  }
+  
+  .correccion-youtube {
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+/* PORNHUB*/
+.formulario-tarjeta__PORNHUB {
+  
+    width: 100%;
+    border-radius: 10px;
+    border: 8px solid #FFA33C;
+  }
+  
+  .correccion-pornhub {
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+/* IPTV*/
+
+.formulario-tarjeta__IPTV {
+
+  
+    width: 100%;
+    border-radius: 10px;
+     border: 8px solid #7360DF;
+  }
+  
+  .correccion-iptv {
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+/* PARAMOUNT*/
+.formulario-tarjeta__PARAMOUNT {
+
+  width: 100%;
+  border-radius: 10px;
+    order: 8px solid blue;
+}
+
+.correccion-paramount{
+  width: 90%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+  
+/* STAR PLUS */
+.formulario-tarjeta__STARPLUS {
+
+  width: 100%;
+  border-radius: 10px;
+    border: 8px solid #392467;
+}
+
+.correccion-starplus{
+  width: 90%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+  
+
+
     .menu {
         height: auto;
     }
